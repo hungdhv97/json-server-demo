@@ -57,7 +57,24 @@ const randomProductList = (categoryList, numberOfProduct) => {
         products: productList,
         profile: {
             "name": "hung"
-        }
+        },
+        foods: [
+            {
+                "id": "1b6193bf-af64-49c6-abbf-f288fb891137",
+                "name": "Thái Doãn Hùng",
+                "food": "Mì tôm ngan"
+            },
+            {
+                "id": "1524f779-52ce-4785-bb65-e4e4b3de5d5a",
+                "name": "Nguyễn Đình Chung",
+                "food": "Miến ngan"
+            },
+            {
+                "id": "db46688d-c961-45b3-b5d8-5a8cbb667c38",
+                "name": "Nguyễn Phương Ngọc",
+                "food": "Bánh mì"
+            }
+        ]
     }
 
     fs.writeFile("db.json", JSON.stringify(db), () => {
